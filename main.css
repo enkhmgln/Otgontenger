@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+:root {
+    --primary-color: rgba(0,0,0,0);
+    --text-color:#252B42;
+    
+}
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.1rem 5rem;
+  background:var(--primary-color);
+  color: var(--text-color);
+  z-index: 99;
+  position: absolute;
+  width: 1322px;
+  height: 91px;
+  left: calc(50% - 1322px / 2);
+  top: 0px;
+}
+.left {
+   text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+
+}
+
+.menuItems {
+  display: flex;
+  flex-direction: row;
+}
+
+.items {
+  list-style-type: none;
+  margin-left: 3rem;
+}
+
+.items > a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.items::after {
+  content: "";
+  width: 0rem;
+  height: 0.15rem;
+  display: block;
+  border-radius: 0.2rem;
+  margin: 0.2rem auto 0 auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.items:hover::after {
+  width: 2rem;
+}
